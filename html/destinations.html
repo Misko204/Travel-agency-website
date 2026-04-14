@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Turistička agencija - Destinacije</title>
+    </head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Turistička agencija</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Početna</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galerija</a></li>
+                            <li class="nav-item"><a class="nav-link text-white active" href="#">Destinacije</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account.html">Moj nalog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">O nama</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jezik
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-rs"></span> Srpski</a></li>
+                                    <li><a class="dropdown-item" href="destinations-en.html"><span class="flag-icon flag-icon-gb"></span> Engleski</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2>Destinacije</h2>
+        <div class="mb-4">
+            <input type="text" id="searchBar" class="form-control" placeholder="Pretraži destinacije...">
+        </div>
+
+        <section class="mb-5">
+            <h3>Evropa</h3>
+            <section class="mb-5 destinations">
+                <div class="dest-item">
+                    <a href="prague.html"><h4>Prag - grad stotinu tornjeva</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <p>Prag je jedan od najlepših evropskih gradova, poznat po svojoj bajkovitoj arhitekturi, uskim kaldrmisanim ulicama i čuvenom Karlovom mostu koji povezuje obale Vltave.</p>
+                            <p>Praški zamak i Stari gradski trg oduzimaju dah svojom lepotom, dok večernje šetnje uz reku stvaraju romantičnu atmosferu koju nećete zaboraviti.</p>
+                            <p>Ovaj aranžman pruža savršen spoj kulture, istorije i zabave – idealan za one koji žele da dožive čaroliju srednje Evrope.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/prague1.jpg" alt="Prag" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-item">
+                    <a href="berlin.html"><h4>Berlin - grad koji nikada ne spava</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="../images/berlin1.jpg" alt="Berlin" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Berlin je metropola koja spaja bogatu istoriju i moderan duh – od Brandenburške kapije i Berlinskog zida, do umetničkih četvrti i živopisnog noćnog života.</p>
+                            <p>Šetnja bulevarom Unter den Linden otkriva impozantne muzeje i spomenike, dok vas popularni kvartovi poput Kreuzberga i Mitte uvode u savremeni ritam grada.</p>
+                            <p>Aranžman pruža jedinstvenu priliku da doživite Berlin kao grad kulture, slobode i neprekidne energije.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-item">
+                    <a href="budapest.html"><h4>Budimpešta - biser na Dunavu</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <p>Budimpešta, grad raskošnih palata i termalnih izvora, očarava svojom arhitekturom i živopisnim pogledom na Dunav.</p>
+                            <p>Šetnja pored veličanstvenog Parlamenta, prelazak preko Lančanog mosta i pogled sa brda Gellért ostavljaju bez daha.</p>
+                            <p>Ovaj aranžman pruža savršenu kombinaciju kulture, istorije i opuštanja – iskustvo koje se pamti zauvek.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/budapest1.jpg" alt="Budimpesta" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="mb-5">
+            <h3>Leto 2025</h3>
+            <section class="mb-5 destinations">
+                <div class="dest-item">
+                    <a href="kusadasi.html"><h4>Kušadasi - dragulj Egejskog mora</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <p>Poznata turistička destinacija na obali Turske, Kušadasi osvaja prelepim plažama, kristalno čistim morem i bogatim noćnim životom.</p>
+                            <p>Uživajte u šetnji slikovitom marinom, tradicionalnim bazarima i nezaboravnim izletima do Efesa i Kušadasi ostrva – „Güvercinada“.</p>
+                            <p>Savršen spoj odmora, zabave i kulture čini Kušadasi idealnim izborom za letovanje.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/kusadasi1.jpg" alt="Kušadasi" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-item">
+                    <a href="marrakech.html"><h4>Marakeš – mirisi, boje i zvuci Orijenta</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="../images/marrakech1.jpg" alt="MarakeŠ" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Marakeš je magičan grad gde se prošlost i sadašnjost susreću na svakom ćošku.</p>
+                            <p>U beskrajnim soukovima okusi, mirisi začina i zvukovi nastavljaju vekovnu priču dok se pustinja na obzorju susreće sa zidinama stare medine.</p>
+                            <p>Palate, vrtovi i hamami pružaju mir, a velelepne palate Bahia i El Badi ostavljaju bez daha.</p>
+                            <p>Doživi Marakeš — mesto gde je svaki trenutak spektakl, a svaki zalazak sunca poseban.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-item">
+                    <a href="hurgada.html"><h4>Hurgada – raj na obali Crvenog mora</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <p>Hurgada je jedno od najpopularnijih letovališta u Egiptu, poznato po beskrajnim peščanim plažama i kristalno čistom Crvenom moru.</p>
+                            <p>Raj je za ljubitelje ronjenja i snorklinga jer skriva jedan od najlepših podvodnih svetova na svetu.</p>
+                            <p>Uz luksuzne hotele, živopisne bazare i toplu egipatsku atmosferu, Hurgada je idealno mesto za odmor i avanturu.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/hurgada1.jpg" alt="Hurgada" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="mb-5">
+            <h3>Zima 2025</h3>
+            <section class="mb-5 destinations">
+                <div class="dest-item">
+                    <a href="les-menuires.html"><h4>Les Menuires - raj za ljubitelje skijanjna</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <p>Les Menuires, smešten u srcu francuskih Alpa, nudi savršene staze za skijaše svih nivoa.</p>
+                            <p>Moderni ski liftovi i dobro uređene staze omogućavaju neprekidno uživanje, dok vas planinski pejzaži i svež alpski vazduh ostavljaju bez daha.</p>
+                            <p>Posle dana na snegu, opustite se u šarmantnim restoranima i planinskim hotelima sa pogledom na netaknutu prirodu.</p>
+                            <p>Doživite zimsku avanturu koja spaja adrenalin i mirnoću alpskog ambijenta.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/les-menuires1.jpg" alt="Les Menuires" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-item">
+                    <a href="kopaonik.html"><h4>Kopaonik - srpski zimski raj</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <img src="../images/kopaonik1.jpg" alt="Kopaonik" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Kopaonik je najveći i najpoznatiji ski centar u Srbiji, idealan za sve ljubitelje zime i sportova na snegu.</p>
+                            <p>Sa preko 50 modernih ski liftova i više od 60 km uređenih staza, pruža savršene uslove za skijaše svih nivoa.</p>
+                            <p>Pored skijanja, uživajte u šetnjama po prelepim planinskim pejzažima, wellness centrima i gostoljubivim restoranima.</p>
+                            <p>Doživite zimu u Kopaoniku – spoj adrenalina i opuštanja u srcu Srbije.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dest-item">
+                    <a href="bansko.html"><h4>Bansko - snežne avanture i planinski mir</h4></a>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <p>Bansko je jedno od najpopularnijih zimovališta u Bugarskoj, poznato po dobro uređenim stazama, modernim ski liftovima i prelepim planinskim pejzažima.</p>
+                            <p>Sa stazama prilagođenim svim nivoima skijaša i bogatom ponudom zimskih aktivnosti, pruža savršen zimski odmor.</p>
+                            <p>Posle dana provedenog na snegu, uživajte u lokalnoj kuhinji i šarmantnim kafićima u starom delu grada.</p>
+                            <p>Bansko kombinuje adrenalin i opuštanje u srcu Pirina planine.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/bansko1.jpg" alt="Bansko" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Odsek za softversko inženjerstvo ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

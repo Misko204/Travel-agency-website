@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Turistička agencija - O nama</title>
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Turistička agencija</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Početna</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galerija</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations.html">Destinacije</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account.html">Moj nalog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white active" href="#">O nama</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jezik
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-rs"></span> Srpski</a></li>
+                                    <li><a class="dropdown-item" href="about-en.html"><span class="flag-icon flag-icon-gb"></span> Engleski</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="mb-4">O nama</h2>
+
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <p>Naša turistička agencija postoji više od 10 godina i sa ponosom vam nudimo jedinstvena putovanja po meri. Naš tim se sastoji od iskusnih profesionalaca, a svako putovanje koje organizujemo je pažljivo isplanirano i potpuno prilagođeno vašim željama.</p>
+                <p>Od porodičnih odmora do egzotičnih avantura, mi vam obezbeđujemo sigurnost, komfor i nezaboravna iskustva.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../images/team.jpg" alt="Naš tim" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <h3>Zašto smo drugačiji?</h3>
+            <div class="row text-center mt-4">
+                <div class="col-md-6">
+                    <img src="../images/pers.jpg" class="img-fluid rounded mb-3" alt="Personalizovani pristup">
+                    <h5>Personalizovani pristup</h5>
+                    <p>Svaki korisnik dobija jedinstveno putovanje, prilagođeno njegovim željama i budžetu.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../images/passport.jpg" class="img-fluid rounded mb-3" alt="Inovacije u turizmu">
+                    <h5>Inovacije u turizmu</h5>
+                    <p>Koristimo savremene alate i aplikacije kako bismo unapredili vaše iskustvo rezervacije i putovanja.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3>Naše nagrade</h3>
+            <div class="row text-center mt-4">
+                <div class="col-12 mb-4">
+                    <img src="../images/trophies.jpg" class="img-fluid rounded mb-3" alt="Nagrade" />
+                </div>
+                <div class="col-md-4">
+                    <h6>Najbolja agencija Balkana 2023</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6>Nagrada za korisnički servis 2024</h6>
+                </div>
+                <div class="col-md-4">
+                    <h6>Izvanrednost u inovacijama 2024</h6>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h6>Partner sa najvišom ocenom 2023</h6>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h6>Najbolje prilagođene ture 2023</h6>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3>Gde se nalazimo</h3>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p><strong>Adresa:</strong> Bulevar kralja Aleksandra 73, Beograd</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+381111234567">+381 11 1234 567</a></p>
+                    <p><strong>Email:</strong> kontakt@turizam.rs</p>
+                    <p><strong>Radno vreme:</strong> Pon – Pet: 09:00–18:00, Sub: 10:00–14:00</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.22123311125!2d20.481084!3d44.8057801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa16ce58273%3A0xd6b63ff45cc39847!2sBulevar%20kralja%20Aleksandra%2073%2C%20Beograd!5e0!3m2!1ssr!2srs!4v1692892059682!5m2!1ssr!2srs" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Odsek za softversko inženjerstvo ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

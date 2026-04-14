@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Turistička agencija - Les Menuires</title>
+</head>
+<body data-lang="sr">
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Turistička agencija</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Početna</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galerija</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations.html">Destinacije</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account.html">Moj nalog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">O nama</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jezik
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-rs"></span> Srpski</a></li>
+                                    <li><a class="dropdown-item" href="les-menuires-en.html"><span class="flag-icon flag-icon-gb"></span> Engleski</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 id="destination-title"><button onclick="history.back()">&#10094;</button>&nbsp;Les Menuires - raj za ljubitelje skijanja
+        <span id="avg-rating"></span>
+        </h2>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12">
+                    <p>Les Menuires je jedno od najpoznatijih skijališta u Francuskoj, smešteno u srcu Alpa i deo je čuvenog skijaškog kompleksa „Tri doline“.</p>  
+                    <p>Ovo moderno zimovalište nalazi se na visini od 1.850 metara i nudi odlične uslove za skijanje tokom cele sezone.</p>  
+                    <p>Sa preko 600 kilometara povezanih staza, Les Menuires je idealan kako za početnike, tako i za iskusne skijaše i snowboardere.</p>  
+                    <p>Grad je osmišljen tako da sve bude lako dostupno – od ski staza do hotela, apartmana, restorana i prodavnica.</p>  
+                    <p>Pored skijanja, gosti mogu uživati u bogatoj ponudi aktivnosti poput sankanja, vožnje motornih sanki, klizanja i planinskih šetnji.</p>  
+                    <p>Les Menuires poseduje i moderne wellness centre i spa zone, savršene za opuštanje posle dana provedenog na snegu.</p>  
+                    <p>Za porodice je posebno atraktivno jer ima brojne sadržaje i programe namenjene deci svih uzrasta.</p>  
+                    <p>Noću, resort nudi raznoliku zabavu kroz restorane, barove i apres-ski događaje, čime upotpunjuje doživljaj odmora.</p>  
+                    <p>Prelep pogled na okolne planinske vrhove i čisti alpski vazduh ostavljaju snažan utisak na svakog posetioca.</p>  
+                    <p>Les Menuires je destinacija koja kombinuje sport, zabavu i relaksaciju, čineći je savršenim izborom za zimski odmor.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-6">
+                    <img src="../images/les-menuires1.jpg" alt="Les Menuires" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <form id="bookingForm" data-destination="Les Menuires" data-price="500">
+                        <table>
+                            <tr>
+                                <td><h4>Cena: $500</h4></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Ime i prezime:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="startDate">Datum od:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="startDate" id="startDate" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="endDate">Datum do:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="endDate" id="endDate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><button id="rezervisi" type="submit" class="btn btn-primary">Rezerviši</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Odsek za softversko inženjerstvo ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

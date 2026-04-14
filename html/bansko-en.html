@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Travel agency - Bansko</title>
+</head>
+<body data-lang="eng">
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index-en.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Travel agency</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index-en.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery-en.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations-en.html">Destinations</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account-en.html">My Account</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about-en.html">About Us</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Language
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item" href="bansko.html"><span class="flag-icon flag-icon-rs"></span> Serbian</a></li>
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 id="destination-title"><button onclick="history.back()">&#10094;</button>&nbsp;Bansko - Winter Paradise in Bulgaria
+        <span id="avg-rating"></span>
+        </h2>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12">
+                    <p>Bansko is one of the most popular winter resorts in Bulgaria, located at the foot of the Pirin Mountains, known for its perfectly maintained ski slopes.</p>  
+                    <p>The town combines modern infrastructure with traditional Bulgarian charm, featuring an old town with cobbled streets and wooden houses.</p>  
+                    <p>The Bansko ski resort offers slopes of varying difficulty levels, suitable for beginners, recreational skiers, and experienced professionals.</p>  
+                    <p>Numerous ski lifts and gondolas allow fast and comfortable access to different slopes and mountain areas.</p>  
+                    <p>Besides skiing and snowboarding, Bansko offers opportunities for hiking, sledding, and other winter activities.</p>  
+                    <p>The town is also famous for its vibrant nightlife, with restaurants, cafes, and bars offering local specialties and traditional music.</p>  
+                    <p>Bansko is ideal for families as well, with special programs and facilities designed for children.</p>  
+                    <p>Panoramic views of the Pirin Mountains and fresh mountain air make a stay in Bansko an unforgettable experience.</p>  
+                    <p>Throughout the year, Bansko attracts visitors in summer too, thanks to natural beauty, cycling trails, and hiking paths.</p>  
+                    <p>Bansko is a destination that combines sports, tradition, and relaxation, providing the perfect winter and summer holiday.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-6">
+                    <img src="../images/bansko1.jpg" alt="Bansko" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <form id="bookingForm" data-destination="Bansko" data-price="500">
+                        <table>
+                            <tr>
+                                <td><h4>Price: $500</h4></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Full Name:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="startDate">Start Date:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="startDate" id="startDate" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="endDate">End Date:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="endDate" id="endDate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><button id="rezervisi" type="submit" class="btn btn-primary">Book Now</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Department of Software Engineering, ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

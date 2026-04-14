@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Travel agency - My account</title>
+    </head>
+<body data-lang="en">
+   <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index-en.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Travel agency</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index-en.html">Home page</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery-en.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations-en.html">Destinations</a></li>
+                            <li class="nav-item"><a class="nav-link text-white active" href="#">My account</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about-en.html">About us</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Language
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item" href="account.html"><span class="flag-icon flag-icon-rs"></span> Serbian</a></li>
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="mb-4">My account</h2>
+
+        <section class="mb-5">
+            <h3>My reservations</h3>
+            <div id="reservationsList" class="row gy-3">
+
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3>Visited destinations</h3>
+            <div id="visitedList" class="row gy-3">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Department of Software Engineering, ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

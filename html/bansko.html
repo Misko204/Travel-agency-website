@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Turistička agencija - Bansko</title>
+</head>
+<body data-lang="sr">
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Turistička agencija</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Početna</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galerija</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations.html">Destinacije</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account.html">Moj nalog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">O nama</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jezik
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-rs"></span> Srpski</a></li>
+                                    <li><a class="dropdown-item" href="bansko-en.html"><span class="flag-icon flag-icon-gb"></span> Engleski</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 id="destination-title"><button onclick="history.back()">&#10094;</button>&nbsp;Bansko - zimski raj u Bugarskoj
+        <span id="avg-rating"></span>
+        </h2>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12">
+                    <p>Bansko je jedno od najpoznatijih zimovališta u Bugarskoj, smešteno u podnožju Pirin planine i poznato po savršeno uređenim skijaškim stazama.</p>  
+                    <p>Grad kombinuje modernu infrastrukturu sa tradicionalnim bugarskim šarmom, sa starim delom grada punim kamenih ulica i drvenih kuća.</p>  
+                    <p>Skijalište Bansko nudi staze različitog nivoa težine, pogodnih za početnike, rekreativce i iskusne skijaše.</p>  
+                    <p>Brojni ski liftovi i gondole omogućavaju brzo i udobno povezivanje staza i planinskih oblasti.</p>  
+                    <p>Pored skijanja i snowboardinga, Bansko pruža mogućnosti za planinarenje, vožnju sankama i druge zimske aktivnosti.</p>  
+                    <p>Grad je poznat i po bogatom noćnom životu, sa restoranima, kafićima i barovima koji nude lokalne specijalitete i tradicionalnu muziku.</p>  
+                    <p>Bansko je idealna destinacija i za porodice, sa posebnim programima i sadržajima prilagođenim deci.</p>  
+                    <p>Panoramski pogledi na Pirin planinu i svež planinski vazduh čine boravak u Bansku nezaboravnim iskustvom.</p>  
+                    <p>Tokom cele godine Bansko privlači posetioce i leti, zbog prirodnih lepota, planinskih staza za biciklizam i šetnje.</p>  
+                    <p>Bansko je destinacija koja kombinuje sport, tradiciju i opuštanje, pružajući idealan zimski i letnji odmor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-6">
+                    <img src="../images/bansko1.jpg" alt="Bansko" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <form id="bookingForm" data-destination="Bansko" data-price="500">
+                        <table>
+                            <tr>
+                                <td><h4>Cena: $500</h4></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Ime i prezime:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="startDate">Datum od:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="startDate" id="startDate" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="endDate">Datum do:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="endDate" id="endDate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><button id="rezervisi" type="submit" class="btn btn-primary">Rezerviši</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Odsek za softversko inženjerstvo ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

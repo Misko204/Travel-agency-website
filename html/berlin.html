@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Turistička agencija - Berlin</title>
+</head>
+<body data-lang="sr">
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Turistička agencija</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Početna</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galerija</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations.html">Destinacije</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account.html">Moj nalog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">O nama</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jezik
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-rs"></span> Srpski</a></li>
+                                    <li><a class="dropdown-item" href="berlin-en.html"><span class="flag-icon flag-icon-gb"></span> Engleski</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 id="destination-title"><button onclick="history.back()">&#10094;</button>&nbsp;Berlin - grad koji nikada ne spava
+        <span id="avg-rating"></span>
+        </h2>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12">
+                    <p>Berlin, glavni grad Nemačke, metropola je koja spaja bogatu istoriju sa modernim duhom i kosmopolitskim šarmom.</p>
+                    <p>Ovaj grad je poznat kao mesto gde se prošlost i budućnost susreću na svakom koraku – od istorijskih spomenika i muzeja do futurističke arhitekture i živopisnog noćnog života.</p>
+                    <p>Najpoznatiji simbol Berlina je Brandenburška kapija, koja ponosno stoji kao svedok burne istorije i simbol jedinstva Nemačke.</p>
+                    <p>Ostaci Berlinskog zida podsećaju na vreme podele grada, dok umetničke instalacije na East Side Gallery pretvaraju ga u otvorenu galeriju pod vedrim nebom.</p>
+                    <p>Impresivni Muzejski ostrvo, pod zaštitom UNESCO-a, čuva svetski poznate umetničke i arheološke zbirke.</p>
+                    <p>U srcu grada nalazi se Rajhstag, zgrada nemačkog parlamenta, čija staklena kupola nudi spektakularan pogled na Berlin.</p>
+                    <p>Grad je poznat i po brojnim parkovima i zelenim površinama, od kojih se posebno izdvaja prostrani Tiergarten.</p>
+                    <p>Berlin je centar kulture, umetnosti i muzike, sa bogatim programom koncerata, festivala i pozorišnih predstava.</p>
+                    <p>Istovremeno, grad odiše modernim ritmom kroz dinamične četvrti pune restorana, kafića i prodavnica.</p>
+                    <p>Bilo da dolazite zbog istorije, umetnosti ili zabave, Berlin će vam pružiti nezaboravno iskustvo i ostaviti snažan utisak na svakog posetioca.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-6">
+                    <img src="../images/berlin1.jpg" alt="Berlin" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <form id="bookingForm" data-destination="Berlin" data-price="500">
+                        <table>
+                            <tr>
+                                <td><h4>Cena: $500</h4></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Ime i prezime:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="startDate">Datum od:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="startDate" id="startDate" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="endDate">Datum do:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="endDate" id="endDate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><button id="rezervisi" type="submit" class="btn btn-primary">Rezerviši</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Odsek za softversko inženjerstvo ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

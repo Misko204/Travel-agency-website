@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.jpg">
+    <title>Turistička agencija - Budimpešta</title>
+</head>
+<body data-lang="sr">
+    <header class="bg-primary text-white p-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                        <img src="../images/logo.jpg" alt="Logo" class="me-2">
+                        <h1 class="h3 mb-0">Turistička agencija</h1>
+                    </a>
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center text-lg-end ms-lg-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Početna</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galerija</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="destinations.html">Destinacije</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="account.html">Moj nalog</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">O nama</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jezik
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end w-auto" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item active" href="#"><span class="flag-icon flag-icon-rs"></span> Srpski</a></li>
+                                    <li><a class="dropdown-item" href="budapest-en.html"><span class="flag-icon flag-icon-gb"></span> Engleski</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 id="destination-title"><button onclick="history.back()">&#10094;</button>&nbsp;Budimpešta - biser na Dunavu
+        <span id="avg-rating"></span>
+        </h2>
+
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12">
+                    <p>Budimpešta, glavni grad Mađarske, jedno je od najlepših i najživopisnijih mesta u Evropi, poznato po raskošnoj arhitekturi, bogatoj istoriji i jedinstvenom šarmu.</p>
+                    <p>Grad je podeljen rekom Dunav na Budim i Peštu, a povezan nizom veličanstvenih mostova, među kojima se posebno ističe Lančani most – simbol grada.</p>
+                    <p>Na budimskoj strani dominira Kraljevski dvorac i Ribarska tvrđava, odakle se pruža nezaboravan pogled na panoramu Pešte i čuvenu zgradu Parlamenta, jednog od najlepših primera neogotičke arhitekture u svetu.</p>
+                    <p>U samom srcu grada nalazi se trg Heroja i Andrássy bulevar, pod zaštitom UNESCO-a, gde se oseća duh elegancije i istorije.</p>
+                    <p>Budimpešta je poznata i kao „grad termalnih izvora“, sa brojnim banjama koje nude opuštanje i uživanje tokom cele godine.</p>
+                    <p>Noćni život grada je izuzetno bogat, sa modernim barovima, restoranima i tradicionalnim čardama u kojima možete probati specijalitete mađarske kuhinje.</p>
+                    <p>Vožnja brodom po Dunavu posebno je iskustvo koje otkriva magičnu lepotu osvetljenih mostova i znamenitosti.</p>
+                    <p>Tokom cele godine Budimpešta nudi bogat kulturni program – od koncerata i opera do festivala i sajmova.</p>
+                    <p>To je grad koji spaja tradiciju i savremenost, mir i energiju, i koji svakom posetiocu pruža uspomene za ceo život.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-5">
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-6">
+                    <img src="../images/budapest1.jpg" alt="Budimpešta" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <form id="bookingForm" data-destination="Budimpešta" data-price="500">
+                        <table>
+                            <tr>
+                                <td><h4>Cena: $500</h4></td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Ime i prezime:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="startDate">Datum od:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="startDate" id="startDate" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="endDate">Datum do:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" name="endDate" id="endDate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><button id="rezervisi" type="submit" class="btn btn-primary">Rezerviši</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Copyright 2025, Mišković Aleksa i Jovanović Maksim, Odsek za softversko inženjerstvo ETF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
